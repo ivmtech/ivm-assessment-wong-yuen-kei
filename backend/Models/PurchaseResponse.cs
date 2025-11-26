@@ -8,4 +8,6 @@ public class PurchaseResponse
     public int QuantityPurchased { get; set; } // Number of items purchased
     public decimal TotalCost { get; set; } // Total cost of purchase
     public string? Warning { get; set; } // Optional: for low stock warnings
+    public object ProductId { get; internal set; }
+    public object RemainingStock { get; internal set; }
 }
